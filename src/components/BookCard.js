@@ -1,7 +1,15 @@
 import React from 'react'
 
-function BookCard({ book }) {
-  console.log(book);
+function BookCard({ book, deleteBook }) {
+
+  function handleDelete() {
+    fetch(`http://localhost:3002/books/${book.id}`, {
+      method: "DELETE"
+    })
+      .then((res) => res.json())
+      .then(() => deleteBook(book))
+  }
+
   return (
     <div className='container'>
       <div className='card'>
@@ -17,6 +25,7 @@ function BookCard({ book }) {
         <div className="">
           <button
             className="deletebutton"
+            onClick={handleDelete}
           >
             x
           </button>
