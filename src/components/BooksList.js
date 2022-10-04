@@ -1,10 +1,19 @@
 import React from 'react'
 import Bookcard from './BookCard'
 
-function BooksList() {
+function BooksList({ books }) {
     return (
-        <div>BooksList
-            <Bookcard />
+        <div>
+            {books.map((book) => {
+                return (
+                    <div>
+                        <Bookcard key={book.id} book={book} />
+                    </div>
+                );
+            })
+
+            }
+
         </div>
     )
 }
