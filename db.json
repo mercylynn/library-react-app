@@ -2,7 +2,7 @@
   "books": [
     {
       "id": 1,
-      "name": "Eloquent Javascript 3rd Edition",
+      "name": "Eloquent Javascript ",
       "author": "Marjin Haverbeke",
       "image": "https://elementor.com/cdn-cgi/image/f=auto,w=720/marketing/wp-content/uploads/sites/9/2021/07/image3.jpg",
       "year": 2011
@@ -83,7 +83,13 @@
       "author": "Mining Ethem",
       "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1582629214l/51724377._SY475_.jpg",
       "year": 2019
+    },
+    {
+      "name": "HTML and CSS",
+      "author": "Jon Duckett",
+      "image": "https://m.media-amazon.com/images/I/31b4K-hFH-L._SX258_BO1,204,203,200_.jpg",
+      "year": "2015",
+      "id": 13
     }
-    
   ]
 }
