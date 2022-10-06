@@ -31,8 +31,9 @@ function Login() {
 
     return (
         <div>
-            <h4>Login</h4>
+
             <form className='loginForm' onSubmit={handleSubmit}>
+                <h1>Login</h1>
                 <input className='inputform' placeholder='Email' type='text' name='email' value={formData.email} onChange={handleChange} />
                 <input className='inputform' placeholder='Password' type='password' name='password' value={formData.password} onChange={handleChange} />
                 <button type='submit' value='Log in' className='button'>login </button>
