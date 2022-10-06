@@ -19,33 +19,11 @@ code {
   background-color: #ADD8E6;
   max-width: 120rem;
   height: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  position: relative;
-  /*Creates 4 columns, each 100px in width*/
-
-
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex-direction: row; */
-
-  /* position: relative; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(minmax(250px, 1fr));
-  grid-gap: 20px; */
-  /* grid-gap: 2rem; */
-  /* grid-template-columns: repeat(4, 1fr);
-  place-content: center; */
 }
-
-
 
 .card {
   background-color: #e0e0e0;
   padding: 1rem;
-  /* margin: 10px; */
   margin: 25px;
   border-radius: 5px;
   box-shadow: 0 5px 10px -3px #999;
@@ -53,11 +31,6 @@ code {
   vertical-align: top;
   width: 230px;
   height: 390px;
-
-  /* overflow: hidden; */
-
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
-  /* transition: 0.2s ease-in-out; */
 }
 
 .card:hover {
@@ -88,29 +61,12 @@ code {
 }
 
 
-@media (max-width: 941px) {
-  .container {
-    max-width: 700px;
-  }
 
-  .card {
-    margin: 49px;
-  }
-}
-
-@media (max-width: 730px) {
-  .card {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-}
 
 /*form style*/
 .formcontainer {
   width: 50%;
   background-color: #697184;
-  background-color: ;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -150,7 +106,6 @@ code {
   display: block;
   padding: 0 10px;
   outline: none;
-  /* border: 1px solid #cccccc; */
   border-radius: 30px;
   border: 1px solid black;
 }
@@ -251,12 +206,10 @@ code {
 
 .nav-item .active {
   color: #451A00;
-  border: 1px solid #451A00;
+  border: 1px solid #fff;
 }
 
-.nav-icon {
-  display: none;
-}
+
 
 @media screen and (max-width: 960px) {
   .nav-menu {
@@ -290,29 +243,16 @@ code {
     display: table;
   }
 
-  .nav-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #451A00;
-  }
-
-  /*footer*/
-
 }
 
 /*login*/
 .loginForm {
   margin: auto;
-  width: 25%;
+  width: 30%;
   margin-top: 3rem;
   background-color: #697184;
   border-radius: 10px;
-  padding-left: 3rem;
+  padding-left: 5rem;
   padding-bottom: 3rem;
   padding-top: 3rem;
   margin-bottom: 3rem;
@@ -321,18 +261,25 @@ code {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.loginForm h1 {
+
+  margin-left: 25%;
+}
+
 .inputform {
 
   gap: 8px;
   margin: 10px;
-  width: 50%;
+  width: 60%;
+  height: 40px;
   margin-left: 50px;
 
 }
 
 .button {
   border-radius: 30px;
-  width: 70px;
+  width: 100px;
+  height: 30px;
   margin-left: 25%;
   border: none;
   background-color: #451A00;
@@ -352,9 +299,6 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 
 }
 
