@@ -7,15 +7,13 @@ import Search from './Search'
 function BooksList({ books, setBooks }) {
     const [category, setCategory] = useState("All")
     const [search, setSearch] = useState("")
-
+    //delete book
     function deleteBook(deletedBook) {
         setBooks(books.filter((book) => {
             return book.id !== deletedBook.id
         }))
 
     }
-
-
 
 
     function handleCategoryChange(event) {
@@ -35,7 +33,7 @@ function BooksList({ books, setBooks }) {
     const displayBooks = booksToDisplay.map((eventObj) => {
         return <Bookcard key={eventObj.id} book={eventObj} deleteBook={deleteBook} />
     })
-    //Render events in rows of 4
+    //Render books in rows of 4
     //Mutates displayEvents into arrays of groups of 4
     function renderBooks() {
         let books = []
@@ -52,20 +50,9 @@ function BooksList({ books, setBooks }) {
     }
     return (
         <div>
-            {/* {books.map((book) => {
-                return (
-                    <div>
-                        <Bookcard key={book.id} book={book} deleteBook={deleteBook} />
-                        
 
-                    </div>
-                );
-            })
-
-            } */}
             <Search search={search} onCategoryChange={handleCategoryChange} onSearchChange={handleSearchChange} />
             <div>{renderBooks()}</div>
-
 
 
         </div>
