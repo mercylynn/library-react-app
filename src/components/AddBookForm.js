@@ -6,7 +6,8 @@ function AddBookForm({ addBook }) {
         name: "",
         author: "",
         image: "",
-        year: ""
+        year: "",
+        category: ""
     });
 
     function handleChange(e) {
@@ -31,52 +32,76 @@ function AddBookForm({ addBook }) {
 
     }
 
+    function handleClick() {
+        alert("Book successfully added")
+    }
+
 
     return (
-        <div>
+        <div className='formcontainer'>
             <h1>New Book</h1>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+            <form onSubmit={handleSubmit} className="form">
+                <div className='form-item'>
+                    <label>
+                        Name:
+                        <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
 
-                    />
-                </label>
-                <label>
-                    Author:
-                    <input
-                        type="text"
-                        name="author"
-                        value={formData.author}
-                        onChange={handleChange}
+                        />
+                    </label>
+                </div>
+                <div className='form-item'>
+                    <label>
+                        Author:
+                        <input
+                            type="text"
+                            name="author"
+                            value={formData.author}
+                            onChange={handleChange}
 
-                    />
-                </label>
-                <label>
-                    Image:
-                    <input
-                        type="url"
-                        name="image"
-                        value={formData.image}
-                        onChange={handleChange}
+                        />
+                    </label>
+                </div>
+                <div className='form-item'>
+                    <label>
+                        Image:
+                        <input
+                            type="url"
+                            name="image"
+                            value={formData.image}
+                            onChange={handleChange}
 
-                    />
-                </label>
-                <label>
-                    Year:
-                    <input
-                        type="number"
-                        name="year"
-                        value={formData.year}
-                        onChange={handleChange}
+                        />
+                    </label>
+                </div>
+                <div className='form-item'>
+                    <label>
+                        Year:
+                        <input
+                            type="number"
+                            name="year"
+                            value={formData.year}
+                            onChange={handleChange}
 
-                    />
-                </label>
-                <button type="submit">Add Book</button>
+                        />
+                    </label>
+                </div>
+                <div className='form-item'>
+                    <label>
+                        Category:
+                        <input
+                            type="text"
+                            name="category"
+                            value={formData.category}
+                            onChange={handleChange}
+
+                        />
+                    </label>
+                </div>
+                <button type="submit" className='submit-button' onClick={handleClick}>Add Book</button>
             </form>
         </div>
     )
