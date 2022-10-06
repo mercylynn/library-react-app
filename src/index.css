@@ -1,4 +1,5 @@
 body {
+  background-image: url("./components/pages/images/books-bookshelf-computer-science-programming-computer-language-specialist-literature.jpg");
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,18 +16,21 @@ code {
 
 .container {
   width: 90%;
-  background-color: blue;
+  background-color: #ADD8E6;
   max-width: 120rem;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  /*Creates 4 columns, each 100px in width*/
+
+
   /* display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row; */
-  place-content: center;
+
   /* position: relative; */
   /* display: grid; */
   /* grid-template-columns: repeat(minmax(250px, 1fr));
@@ -49,10 +53,16 @@ code {
   vertical-align: top;
   width: 230px;
   height: 390px;
+
   /* overflow: hidden; */
 
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
   /* transition: 0.2s ease-in-out; */
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .image {
@@ -94,4 +104,267 @@ code {
     margin: 0 auto;
     margin-top: 50px;
   }
+}
+
+/*form style*/
+.formcontainer {
+  width: 50%;
+  background-color: #697184;
+  background-color: ;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 100px;
+  left: 25%;
+
+}
+
+.formcontainer h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+
+}
+
+.form-item {
+  margin-bottom: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-item label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+
+}
+
+.form-item input {
+  width: 98%;
+  height: 25px;
+  display: block;
+  padding: 0 10px;
+  outline: none;
+  /* border: 1px solid #cccccc; */
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.form-item input:focus {
+  border-color: #000;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 30px;
+  border: 1px solid #ffff;
+  padding: 7px 20px;
+  background: #451A00;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  transition: .3s;
+  outline: none;
+  width: 150px;
+}
+
+.submit-button:hover {
+  transform: scale(1.1);
+}
+
+.form-item-submit i {
+  color: white;
+}
+
+/*navbar stylying*/
+.navbar {
+  background-color: #697184;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+
+}
+
+.nav-logo {
+  color: #fff;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #451A00;
+}
+
+.nav-item .active {
+  color: #451A00;
+  border: 1px solid #451A00;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #451A00;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: #451A00;
+    border: none;
+  }
+
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #451A00;
+  }
+
+  /*footer*/
+
+}
+
+/*login*/
+.loginForm {
+  margin: auto;
+  width: 25%;
+  margin-top: 3rem;
+  background-color: #697184;
+  border-radius: 10px;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputform {
+
+  gap: 8px;
+  margin: 10px;
+  width: 50%;
+  margin-left: 50px;
+
+}
+
+.button {
+  border-radius: 30px;
+  width: 70px;
+  margin-left: 25%;
+  border: none;
+  background-color: #451A00;
+  color: #fff;
+
+}
+
+.books {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+/*search*/
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+
+}
+
+.search {
+  width: 30%;
+  height: 20px;
+
+  margin-right: 20px;
+}
+
+.sort {
+  height: 20px;
 }
