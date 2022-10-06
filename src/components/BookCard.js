@@ -1,6 +1,7 @@
 import React from 'react'
 
 function BookCard({ book, deleteBook }) {
+  const { name, author, year, image } = book
 
   function handleDelete() {
     fetch(`http://localhost:3002/books/${book.id}`, {
@@ -13,16 +14,13 @@ function BookCard({ book, deleteBook }) {
   return (
     <div className='container'>
       <div className='card'>
-
         <div className='image'>
-          <img alt='bookimage' src={book.image} />
+          <img alt='bookimage' src={image} />
         </div>
         <div className='content'>
-          <h2>{book.name}</h2>
-          <p>{book.author}</p>
-          <p>{book.year}</p>
-        </div>
-        <div className="">
+          <h2>{name}</h2>
+          <p>{author}</p>
+          <p>{year}</p>
           <button
             className="deletebutton"
             onClick={handleDelete}
@@ -31,7 +29,6 @@ function BookCard({ book, deleteBook }) {
           </button>
         </div>
       </div>
-
     </div>
   )
 }
