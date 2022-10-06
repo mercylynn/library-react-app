@@ -12,7 +12,7 @@ function Navbar() {
                 <div className="nav-container">
                     <NavLink exact to="/" className="nav-logo">
                         LibraryBooks
-                        <i className="fas fa-code"></i>
+
                     </NavLink>
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -41,7 +41,6 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <NavLink
-                                exact
                                 to="/books"
                                 activeclassname="active"
                                 className="nav-links"
@@ -52,7 +51,6 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <NavLink
-                                exact
                                 to="/add"
                                 activeclassname="active"
                                 className="nav-links"
@@ -63,7 +61,6 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <NavLink
-                                exact
                                 to="/login"
                                 activeclassname="active"
                                 className="nav-links"
