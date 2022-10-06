@@ -20,7 +20,7 @@ function AddBookForm({ addBook }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch('http://localhost:3002/books', {
+        fetch('https://books-json-server-heroku.herokuapp.com/books', {
             method: "POST",
             headers: {
                 "content-Type": "application/json"
