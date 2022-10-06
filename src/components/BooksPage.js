@@ -20,7 +20,7 @@ function BooksPage() {
 
     }
     return (
-        <div>BooksPage
+        <div>
             <AddBookForm addBook={addBook} />
 
 
