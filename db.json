@@ -4,92 +4,113 @@
       "id": 1,
       "name": "Eloquent Javascript ",
       "author": "Marjin Haverbeke",
-      "image": "https://elementor.com/cdn-cgi/image/f=auto,w=720/marketing/wp-content/uploads/sites/9/2021/07/image3.jpg",
-      "year": 2011
+      "image": "https://eloquentjavascript.net/2nd_edition/img/cover.png",
+      "year": 2011,
+      "category": "javascript"
     },
     {
       "id": 2,
       "name": "The Definitive Guide",
       "author": "David Flanagan",
       "image": "https://m.media-amazon.com/images/I/51HbNW6RzhL._SL250_.jpg",
-      "year": 2006
+      "year": 2006,
+      "category": "javascript"
     },
     {
       "id": 3,
       "name": "JavaScript Patterns",
       "author": "Stoyan Stefanov",
       "image": "https://m.media-amazon.com/images/I/51PKxi4d03S._SX379_BO1,204,203,200_.jpg",
-      "year": 2010
+      "year": 2010,
+      "category": "javascript"
     },
     {
       "id": 4,
       "name": "The Good Parts",
       "author": "Douglas Crockford",
       "image": "https://itbook.store/img/books/9780596517748.png",
-      "year": 2008
+      "year": 2008,
+      "category": "javascript"
     },
     {
       "id": 5,
       "name": "JavaScript and jQuery",
       "author": "Jon Duckett",
       "image": "https://m.media-amazon.com/images/I/31SRWF+LkKL._SX398_BO1,204,203,200_.jpg",
-      "year": 1000
+      "year": 1000,
+      "category": "javascript"
     },
     {
       "id": 6,
-      "name": "Advanced web dvevelopment with React",
+      "name": "Web development with React",
       "author": "Mehul mohan",
       "image": "https://m.media-amazon.com/images/I/41TOCMdOVxL._SX331_BO1,204,203,200_.jpg",
-      "year": 2020
+      "year": 2020,
+      "category": "react"
     },
     {
       "id": 7,
       "name": "The Design of EveryDay Things",
       "author": "Don Norman",
       "image": "https://m.media-amazon.com/images/I/410RTQezHYL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
-      "year": 2013
+      "year": 2013,
+      "category": "ui"
     },
     {
       "id": 8,
       "name": "Design Interfaces",
       "author": "Jenifer Tidwell",
       "image": "https://itbook.store/img/books/9781492051961.png",
-      "year": 2020
+      "year": 2020,
+      "category": "ui"
     },
     {
       "id": 9,
       "name": "Ruby On Rails",
       "author": "Michael Hartl",
       "image": "https://m.media-amazon.com/images/I/41wsFlLMDRL._SX379_BO1,204,203,200_.jpg",
-      "year": 2010
+      "year": 2010,
+      "category": "ruby"
     },
     {
       "id": 10,
       "name": "Learn Ruby The Hard Way",
       "author": "Zed Shaw",
       "image": "https://m.media-amazon.com/images/I/51tO0x2mAiL._SX382_BO1,204,203,200_.jpg",
-      "year": 2014
+      "year": 2014,
+      "category": "ruby"
     },
     {
       "id": 11,
       "name": "Learning Python",
       "author": "mark Lutz",
       "image": "https://m.media-amazon.com/images/I/41nRJEUxePS._SX258_BO1,204,203,200_.jpg",
-      "year": 2000
+      "year": 2000,
+      "category": "python"
     },
     {
       "id": 12,
       "name": "Python",
       "author": "Mining Ethem",
       "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1582629214l/51724377._SY475_.jpg",
-      "year": 2019
+      "year": 2019,
+      "category": "python"
     },
     {
       "name": "HTML and CSS",
       "author": "Jon Duckett",
       "image": "https://m.media-amazon.com/images/I/31b4K-hFH-L._SX258_BO1,204,203,200_.jpg",
-      "year": "2015",
+      "year": "2022",
+      "category": "html",
       "id": 13
+    },
+    {
+      "name": "Truth About HTML5",
+      "author": "Luke Steven",
+      "image": "https://cssdeck.com/blog/wp-content/uploads/2015/03/must-read-html-css-books.jpg",
+      "year": "2012",
+      "category": "html",
+      "id": 14
     }
   ]
 }
