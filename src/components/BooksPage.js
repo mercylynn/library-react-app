@@ -5,9 +5,9 @@ import AddBookForm from './AddBookForm';
 
 function BooksPage() {
     const [books, setBooks] = useState([])
-
+    //fetch data from json-server
     useEffect(() => {
-        fetch('http://localhost:3002/books')
+        fetch('https://books-json-server-heroku.herokuapp.com/books')
             .then(resp => resp.json())
             .then(data => {
                 setBooks(data)
@@ -19,13 +19,11 @@ function BooksPage() {
         setBooks([...books, book]);
 
     }
+
+    <AddBookForm addBook={addBook} />
     return (
         <div>
-            <AddBookForm addBook={addBook} />
-
-
             <BooksList books={books} setBooks={setBooks} />
-
         </div>
     );
 }
