@@ -2,14 +2,15 @@ import React from 'react'
 
 function BookCard({ book, deleteBook }) {
   const { name, author, year, image } = book
-
+  //delete request
   function handleDelete() {
-    fetch(`http://localhost:3002/books/${book.id}`, {
+    fetch(`https://books-json-server-heroku.herokuapp.com/books/${book.id}`, {
       method: "DELETE"
     })
       .then((res) => res.json())
       .then(() => deleteBook(book))
   }
+
 
   return (
     <div className='container'>
@@ -24,6 +25,7 @@ function BookCard({ book, deleteBook }) {
           <button
             className="deletebutton"
             onClick={handleDelete}
+
           >
             x
           </button>
